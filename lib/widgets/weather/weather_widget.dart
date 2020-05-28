@@ -6,12 +6,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_bloc/blocs/blocs.dart';
 import 'package:weather_bloc/widgets/widgets.dart';
 
-class Weather extends StatefulWidget {
+
+class WeatherWidget extends StatefulWidget {
   @override
-  State<Weather> createState() => _WeatherWidgetState();
+  State<WeatherWidget> createState() => _WeatherWidgetState();
 }
 
-class _WeatherWidgetState extends State<Weather> {
+class _WeatherWidgetState extends State<WeatherWidget> {
   Completer<void> _refreshCompleter;
 
   @override
