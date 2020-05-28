@@ -6,4 +6,5 @@ export 'package:weather_bloc/widgets/weather/widgets/combined_weather_temperatur
 export 'package:weather_bloc/widgets/weather/widgets/weather_conditions_widget.dart';
 export 'package:weather_bloc/widgets/weather/widgets/city_selection_widget.dart';
 export 'package:weather_bloc/widgets/weather/weather_widget.dart';
+export 'package:weather_bloc/widgets/settings/settings_widget.dart';
 export 'gradiente_container_theme_widget.dart';

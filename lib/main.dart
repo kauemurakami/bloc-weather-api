@@ -14,8 +14,11 @@ void main() {
   );
   BlocSupervisor.delegate = SimpleBlocDelegate();
   runApp(
-    BlocProvider<ThemeBloc>(
-      create: (context) => ThemeBloc(),
+    MultiBlocProvider(
+      providers: [
+        BlocProvider<ThemeBloc>(create: (_) => ThemeBloc(),),
+        BlocProvider<SettingsBloc>(create: (_) => SettingsBloc(),),
+      ],
       child: App(weatherRepository: weatherRepository),
     ),
   );
